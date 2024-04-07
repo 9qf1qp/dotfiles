@@ -12,6 +12,14 @@ if find $HOME/.config -mtime -1; then
   echo "Copied successfuly!"
 fi
 
+echo "Installing needed packages..."
+
+if sudo pacman -Sy rofi breeze-gtk nemo neofetch fish kitty mako neovim waybar i3 polybar waybar hyprland nwg-look fisher && sudo pacman -U tbsm; then
+  cd $HOME
+  git clone https://github.com/pijulius/picom.git
+  echo "Installed successfuly!"
+fi
+
 echo "Now let's install rofi scripts"
 
 if git clone -q https://github.com/adi1090x/rofi.git $HOME/rofi; then
@@ -20,13 +28,6 @@ if git clone -q https://github.com/adi1090x/rofi.git $HOME/rofi; then
   ./setup.sh
 fi
 
-echo "Installing needed packages..."
-
-if sudo pacman -Sy breeze-gtk nemo neofetch fish kitty mako neovim waybar i3 polybar waybar hyprland nwg-look tbsm fisher; then
-  cd $HOME
-  git clone https://github.com/pijulius/picom.git
-  echo "Installed successfuly!"
-fi
 echo "Trying to change kernel..."
 if chsh -s /bin/fish; then
   echo "Changed successfuly!"
@@ -41,11 +42,3 @@ if fisher install pure-fish/pure; then
 else
   echo "Couldn't change the prompt"
 fi 
-
-echo "Installing NvChad..."
-
-if git clone https://github.com/NvChad/starter ~/.config/nvim; then
-  echo "Installed successfuly!"
-else
-  echo "Couldn't install NvChad"
-fi
