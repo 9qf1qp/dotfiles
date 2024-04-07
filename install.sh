@@ -30,5 +30,5 @@ echo "Trying to change kernel..."
 if chsh -s /bin/fish; then
   echo "Changed successfuly!"
 else
-  echo "Could'n change the kernel"
+  echo "Couldn't change the kernel"
 fi 
