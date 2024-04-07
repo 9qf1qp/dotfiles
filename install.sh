@@ -20,9 +20,9 @@ if git clone -q https://github.com/adi1090x/rofi.git $HOME/rofi; then
   ./setup.sh
 fi
 
-echo "Installing needed programs..."
+echo "Installing needed packages..."
 
-if sudo pacman -Sy nemo neofetch fish kitty mako neovim waybar i3 polybar waybar hyprland nwg-look tbsm; then
+if sudo pacman -Sy breeze-gtk nemo neofetch fish kitty mako neovim waybar i3 polybar waybar hyprland nwg-look tbsm; then
   cd $HOME
   git clone https://github.com/pijulius/picom.git
   echo "Installed successfuly!"
