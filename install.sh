@@ -22,7 +22,7 @@ fi
 
 echo "Installing needed packages..."
 
-if sudo pacman -Sy breeze-gtk nemo neofetch fish kitty mako neovim waybar i3 polybar waybar hyprland nwg-look tbsm; then
+if sudo pacman -Sy breeze-gtk nemo neofetch fish kitty mako neovim waybar i3 polybar waybar hyprland nwg-look tbsm fisher; then
   cd $HOME
   git clone https://github.com/pijulius/picom.git
   echo "Installed successfuly!"
@@ -32,4 +32,20 @@ if chsh -s /bin/fish; then
   echo "Changed successfuly!"
 else
   echo "Couldn't change the kernel"
+fi
+
+echo "Changing prompt..."
+
+if fisher install pure-fish/pure; then
+ echo "Changed successfuly!"
+else
+  echo "Couldn't change the prompt"
 fi 
+
+echo "Installing NvChad..."
+
+if git clone https://github.com/NvChad/starter ~/.config/nvim; then
+  echo "Installed successfuly!"
+else
+  echo "Couldn't install NvChad"
+fi
