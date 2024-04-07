@@ -12,7 +12,7 @@ if find $HOME/.config -mtime -1; then
   echo "Copied successfuly!"
 fi
 
-if git clone https://github.com/adi1090x/rofi.git; then
+if git clone -q https://github.com/adi1090x/rofi.git $HOME/rofi; then
   echo "Now let's install rofi scripts"
 fi
 cd $HOME/rofi/ 
