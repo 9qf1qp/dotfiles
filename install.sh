@@ -9,7 +9,7 @@ fi
 
 if find $HOME/.config -mtime -1; then
   rm -rf $HOME/.config/.git $HOME/.config/README.md $HOME/.config/install.sh
-  echo "Copied successful!"
+  echo "Copied successfuly!"
 fi
 
 if git clone https://github.com/adi1090x/rofi.git; then
@@ -21,8 +21,14 @@ chmod +x setup.sh
 
 echo "Installing needed programs..."
 
-if sudo pacman -Sy nemo neofetch fish kitty mako neovim waybar i3 polybar waybar; then
+if sudo pacman -Sy nemo neofetch fish kitty mako neovim waybar i3 polybar waybar hyprland nwg-look tbsm; then
   cd $HOME
   git clone https://github.com/pijulius/picom.git
-  echo "Installed successful!"
+  echo "Installed successfuly!"
 fi
+echo "Trying to change kernel..."
+if chsh -s /bin/fish; then
+  echo "Changed successfuly!"
+else
+  echo "Could'n change the kernel"
+fi 
