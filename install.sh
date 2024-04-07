@@ -35,10 +35,10 @@ else
   echo "Couldn't change the kernel"
 fi
 
-echo "Changing prompt..."
+echo "Enabling animations..."
 
-if fisher install pure-fish/pure; then
- echo "Changed successfuly!"
+if git clone https://github.com/pijulius/picom.git; then
+ echo "Enabled successfuly!"
 else
-  echo "Couldn't change the prompt"
+  echo "Couldn't enable animations"
 fi 
