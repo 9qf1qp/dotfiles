@@ -6,5 +6,7 @@
     ```
 2. ```cd``` to cloned repo
 3. Run install script
-    ```./install.sh```
+    ```
+    ./install.sh
+    ```
 4. Enjoy your life!
