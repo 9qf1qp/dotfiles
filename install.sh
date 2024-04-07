@@ -1,22 +1,19 @@
 #! /bin/bash
 
+echo "Copying..."
+
 if cp -rT $HOME/dotfiles $HOME/.config; then
-  echo "Copying..."
+  echo "Copied successfuly!"
+  rm -rf $HOME/.config/.git install.sh README.md
 else
   echo "Error! Aborting..."
   exit
 fi
 
-if find $HOME/.config -mtime -1; then
-  rm -rf $HOME/.config/.git $HOME/.config/README.md $HOME/.config/install.sh
-  echo "Copied successfuly!"
-fi
-
 echo "Installing needed packages..."
 
-if sudo pacman -Sy rofi breeze-gtk nemo neofetch fish kitty mako neovim waybar i3 polybar waybar hyprland nwg-look fisher && sudo pacman -U tbsm; then
+if sudo pacman -Sy rofi breeze-gtk nemo neofetch fish kitty mako neovim waybar i3 polybar waybar hyprland nwg-look fisher; then
   cd $HOME
-  git clone https://github.com/pijulius/picom.git
   echo "Installed successfuly!"
 fi
 
