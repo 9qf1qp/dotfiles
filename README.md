@@ -1,6 +1,10 @@
 # How to install
 
-1. clone this repo
-2. cd to cloned repo
-3. run install script
-4. enjoy ur life
+1. Clone this repo:
+    ```shell
+    git clone https://github.com/vidy007/dotfiles.git
+    ```
+2. ```cd``` to cloned repo
+3. Run install script
+    ```./install.sh```
+4. Enjoy your life!

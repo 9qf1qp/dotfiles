@@ -12,12 +12,13 @@ if find $HOME/.config -mtime -1; then
   echo "Copied successfuly!"
 fi
 
+echo "Now let's install rofi scripts"
+
 if git clone -q https://github.com/adi1090x/rofi.git $HOME/rofi; then
-  echo "Now let's install rofi scripts"
+  cd $HOME/rofi/ 
+  chmod +x setup.sh
+  ./setup.sh
 fi
-cd $HOME/rofi/ 
-chmod +x setup.sh
-./setup.sh
 
 echo "Installing needed programs..."
 
