@@ -12,7 +12,7 @@ fi
 
 echo "Installing needed packages..."
 
-if sudo pacman -Sy rofi breeze-gtk nemo neofetch fish kitty mako neovim waybar i3 polybar waybar hyprland nwg-look fisher; then
+if sudo pacman -Sy rofi breeze-gtk nemo neofetch fish kitty mako neovim waybar i3 polybar nwg-look fisher; then
   cd $HOME
   echo "Installed successfuly!"
 fi
