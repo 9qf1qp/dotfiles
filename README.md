@@ -1,4 +1,5 @@
-my dots
+**vidy007's dotfiles**
+![](docs/vid.gif)
 # How to install
 1. Clone this repo:
     ```shell
