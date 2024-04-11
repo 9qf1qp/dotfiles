@@ -1,4 +1,8 @@
-![](docs/vid.gif)
+# Showcase
+    Video:
+    ![](docs/vid.gif)
+    Screenshot:
+    ![](docs/img.png)
 # How to install
 1. Clone this repo:
     ```shell
