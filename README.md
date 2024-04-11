@@ -1,5 +1,5 @@
 **vidy007's dotfiles**
-![](docs/vid.mp4)
+![](docs/vid.gif)
 # How to install
 1. Clone this repo:
     ```shell
