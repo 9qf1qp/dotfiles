@@ -2,7 +2,7 @@
 Video:
 ![](docs/vid.gif)
 Screenshot:
-![](https://imgur.com/a/GUZTQ27)
+![](https://i.imgur.com/VMngV1N.png)
 # How to install
 1. Clone this repo:
     ```shell
