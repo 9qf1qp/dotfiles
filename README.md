@@ -1,4 +1,4 @@
-![](https://github.com/vidy007/dotfiles/blob/main/docs/vid.gif)
+![](docs/vid.gif)
 # How to install
 1. Clone this repo:
     ```shell
