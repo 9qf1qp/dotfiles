@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 exec polybar
 exec picom --experimental-backend --config ~/.config/picom.conf 
-exec feh --bg-scale $HOME/.config/i3/keyboard_yellow.png
+#exec feh --bg-scale $HOME/[insert path]
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
