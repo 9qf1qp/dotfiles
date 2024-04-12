@@ -10,14 +10,7 @@ else
   exit
 fi
 
-echo "Installing needed packages..."
-
-if sudo pacman -Sy rofi breeze-gtk nemo neofetch fish kitty mako neovim waybar i3 polybar nwg-look fisher; then
-  cd $HOME
-  echo "Installed successfuly!"
-fi
-
-echo "Now let's install rofi scripts"
+echo "Installing rofi scripts..."
 
 if git clone -q https://github.com/adi1090x/rofi.git $HOME/rofi; then
   cd $HOME/rofi/ 
@@ -26,6 +19,7 @@ if git clone -q https://github.com/adi1090x/rofi.git $HOME/rofi; then
 fi
 
 echo "Trying to change kernel..."
+
 if chsh -s /bin/fish; then
   echo "Changed successfuly!"
 else
