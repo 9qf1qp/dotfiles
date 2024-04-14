@@ -10,7 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 exec polybar
 exec picom --experimental-backend --config ~/.config/picom.conf 
-#exec feh --bg-scale $HOME/[insert path]
+#exec feh --bg-scale paste/ur/path/here  
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -23,7 +23,7 @@ font pango:JetBrains Mono 10
 
 # Start XDG autostart .desktop files using dex. See also
 # https://wiki.archlinux.org/index.php/XDG_Autostart
-exec --no-startup-id setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
+exec setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
 exec --no-startup-id dex --autostart --environment i3
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
@@ -52,7 +52,7 @@ floating_modifier $mod
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec alacritty
 bindsym $mod+n exec nemo
 
 # kill focused window
@@ -60,7 +60,8 @@ bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
 bindsym $mod+m exec sh $HOME/.config/rofi/launchers/type-4/launcher.sh
-bindsym $mod+p exec sh $HOME/.config/rofi/powermenu/type-2/powermenu.sh
+bindsym $mod+Shift+p exec killall polybar
+bindsym $mod+p exec polybar
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -196,7 +197,7 @@ client.focused_inactive #655c54 #655c54 #ebdbb2 #655c54 #655c54
 client.unfocused #665c54 #665c54 #ebdbb2 #655c54 #665c54
 client.urgent #fe8019 #fe8019 #ebdbb2 #fe8019 #fe8019
 gaps inner 0
-gaps outer 100
+gaps outer 130
 default_border pixel 2
 default_floating_border pixel 2
 #bar {
@@ -211,3 +212,4 @@ default_floating_border pixel 2
 #    inactive_workspace #282828 #282828 #ebdbb2
 #  }
 #}
+exec setxkbmap -model pc105 -layout us,ru -option grp:alt_shift_toggle
