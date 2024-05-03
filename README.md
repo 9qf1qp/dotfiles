@@ -15,4 +15,4 @@ Screenshot:
     ```
 4. Enjoy your life!
 # Firefox moment
-Before copying userChrome.css file, install vertical tabs extension, e.g. ![this one](https://addons.mozilla.org/en-US/firefox/addon/sidetabs/)
+Before copying userChrome.css file, install vertical tabs extension, e.g. this one: https://addons.mozilla.org/en-US/firefox/addon/sidetabs/
