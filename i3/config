@@ -9,8 +9,9 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 exec polybar
+exec dunst
 exec picom --experimental-backend --config ~/.config/picom.conf 
-#exec feh --bg-scale paste/ur/path/here  
+exec feh --bg-scale $HOME/gruv-portal-cake.png
 set $mod Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -111,11 +112,10 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
-
 # focus the parent container
 bindsym $mod+a focus parent
 
+bindsym $mod+space exec emoji-picker
 # focus the child container
 #bindsym $mod+d focus child
 

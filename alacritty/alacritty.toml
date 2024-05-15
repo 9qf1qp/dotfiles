@@ -25,6 +25,7 @@ save_to_clipboard = true
 
 [window]
 dynamic_title = true
+#opacity = 0.8
 dynamic_padding = true
 
 [window.padding]
@@ -35,6 +36,7 @@ y = 40
 history = 10000
 multiplier = 3
 
+#useless:
 [bell]
 animation = "EaseOutQuad"
 duration = 1
