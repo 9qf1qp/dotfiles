@@ -9,10 +9,7 @@ Screenshot:
     git clone https://github.com/vidy007/dotfiles.git
     ```
 2. ```cd``` to cloned repo
-3. Run install script
-    ```
-    ./install.sh
-    ```
+3. Copy all the folders in /home/[ur name]/.config
 4. Enjoy your life!
 # Firefox moment
 Before copying userChrome.css file, install vertical tabs extension, e.g. this one: https://addons.mozilla.org/en-US/firefox/addon/sidetabs/
